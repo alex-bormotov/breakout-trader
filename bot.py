@@ -52,7 +52,7 @@ class Exchange:
 
     def balance(self):
         coin = self.coin_pair.split("/")[0]
-        coin2 = self.coin_pair.split("/")[1]      
+        coin2 = self.coin_pair.split("/")[1]
         try:
             if self.paper_enabled == "yes":
                 return self.paper_balance
@@ -140,7 +140,7 @@ class Trader:
             else:
                 time.sleep(self.api_requests_frequency_per_second)
                 continue
-            
+
 
 def main():
     pass

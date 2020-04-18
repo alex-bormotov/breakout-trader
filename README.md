@@ -1,6 +1,6 @@
 # Trading bot for Binance with breakout trading strategy
 
-![](https://github.com/alex-bormotov/breakout-trader/workflows/Breakout-Trader-CI-CD/badge.svg)
+![](https://github.com/alex-bormotov/breakout-trader/workflows/Breakout-Trader-CI-CD/badge.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fba75048f4064497a458704194a6e927)](https://www.codacy.com/manual/alex-bormotov/breakout-trader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alex-bormotov/breakout-trader&amp;utm_campaign=Badge_Grade)
 
 ## Disclaimer
 
@@ -10,7 +10,7 @@
 
 ### Features
 
-> Breakout strategy - after starting the bot will be waiting for huge price movements and when it happened bot immediately bought the coin, and, after that start trailing stop loss for taking a profit. For example - if price down by 20% last 5 minutes bot detects it and immediately buys the coin and starts trailing stop loss, when trailing step will be achieved bot execute sell order. This works because after any huge price movement immediately starts price correction in the opposite direction.
+> Breakout strategy - after starting the bot will be waiting for huge price movements and when it happened bot immediately bought the coin, and after that starts trailing stop loss for taking a profit. For example - if price down by 20% lasts 5 minutes bot detects it and immediately buys the coin and starts trailing stop loss when trailing step will be achieved bot execute sell order. This works because after any huge price movement immediately starts price correction in the opposite direction.
 
 > Paper trading.
 
