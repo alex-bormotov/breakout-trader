@@ -1,0 +1,30 @@
+name: Breakout-Trader-CI-CD
+
+env:
+  APP_NAME : "breakout-trader"
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+
+      - name: Docker Build & Push to Docker Hub
+        uses: opspresso/action-docker@master
+        with:
+          args: --docker
+        env:
+          USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          PASSWORD: ${{ secrets.DOCKER_API_KEY }}
+          DOCKERFILE: "Dockerfile"
+          IMAGE_NAME: "${{ secrets.DOCKER_USERNAME }}/${{ env.APP_NAME }}"
+          TAG_NAME: ${{ github.sha }}
+          LATEST: "true"

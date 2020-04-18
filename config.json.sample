@@ -1,0 +1,12 @@
+{
+    "telegram_token": "YOUR TELEGRAM TOKEN",
+    "telegram_chat_id": "YOUR TELEGRAM ID - ask this bot @jsondumpbot",
+    "exchange_key": "YOUR BINANCE API KEY",
+    "exchange_secret": "YOUR BINANCE API SECRET",
+    "api_requests_frequency_per_second": 1,
+    "trailing_step_percent": 0.2,
+    "change_percent": 20,
+    "coin_pair": "btc/busd",
+    "paper_trading": "yes",
+    "paper_balance": [1, 1000]
+}
