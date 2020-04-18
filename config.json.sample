@@ -1,6 +1,6 @@
 {
-    "telegram_token": "YOUR TELEGRAM TOKEN",
-    "telegram_chat_id": "YOUR TELEGRAM ID - ask this bot @jsondumpbot",
+    "telegram_token": "",
+    "telegram_chat_id": "",
     "exchange_key": "YOUR BINANCE API KEY",
     "exchange_secret": "YOUR BINANCE API SECRET",
     "api_requests_frequency_per_second": 1,
