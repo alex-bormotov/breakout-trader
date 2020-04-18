@@ -1,5 +1,7 @@
 # Trading bot for Binance with breakout trading strategy
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5094e593fa1c49f689684e1c8ec171ce)](https://app.codacy.com/manual/alex-bormotov/breakout-trader?utm_source=github.com&utm_medium=referral&utm_content=alex-bormotov/breakout-trader&utm_campaign=Badge_Grade_Dashboard)
+
 ![](https://github.com/alex-bormotov/breakout-trader/workflows/Breakout-Trader-CI-CD/badge.svg)
 
 ## Disclaimer
