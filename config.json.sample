@@ -8,5 +8,5 @@
     "change_percent": 20,
     "coin_pair": "btc/busd",
     "paper_trading": "yes",
-    "paper_balance": [1, 1000]
+    "direction": "long"
 }
