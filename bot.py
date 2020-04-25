@@ -7,15 +7,15 @@ import requests
 def get_config():
     with open("config.json", "r") as read_file:
         return json.load(read_file)
-    
+
 def get_paper_balance():
     with open("paper_balance.json", "r") as read_file:
         return json.load(read_file)
-    
+
 def write_paper_balance(new_balance):
     with open("paper_balance.json", "w") as write_file:
         json.dump(new_balance, write_file, indent=1)
-    
+
 
 def notice(msg):
     if len(str(get_config()["telegram_chat_id"])) and len(get_config()["telegram_token"]) > 1:
@@ -45,8 +45,8 @@ class Exchange:
         self.coin = coin
         self.coin2 = coin2
         self.paper_enabled = get_config()["paper_trading"]
-      
-        
+
+
     def price(self):
         def get_price(self):
             try:
@@ -105,12 +105,12 @@ class Trader:
         self.coin_pair = coin_pair
         self.exchange = Exchange(coin_pair, coin, coin2)
 
-    
+
     def trail_stop(self, direction):
         start_price = self.exchange.price()
         last_change_percent = 0.0
         current_change_percent = 0.0
-        
+
         while True:
             if direction == "long":
                 if current_change_percent + self.trailing_step_percent >= last_change_percent:
@@ -121,7 +121,7 @@ class Trader:
                     continue
                 else:
                     return "sell"
-            
+
             if direction == "short":
                 if current_change_percent - self.trailing_step_percent <= last_change_percent:
                     last_change_percent = current_change_percent
@@ -131,7 +131,7 @@ class Trader:
                     continue
                 else:
                     return "buy"
- 
+
     def breakout_detect(self):
         start_price = self.exchange.price()
 
