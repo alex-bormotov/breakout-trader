@@ -134,7 +134,7 @@ class Trader:
  
     def breakout_detect(self):
         start_price = self.exchange.price()
- 
+
         while True:
             current_price = self.exchange.price()
             change_percent = ((current_price - start_price) / start_price) * 100
