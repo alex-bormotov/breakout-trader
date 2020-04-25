@@ -43,7 +43,7 @@ sudo docker build -t breakout-trader .
 ```
 
 ```bash
-sudo docker run breakout-trader &
+sudo docker run -d breakout-trader
 ```
 
 ##### Say Me Thanks :)
