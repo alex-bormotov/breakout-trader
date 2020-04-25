@@ -168,7 +168,7 @@ def main():
                         main()
             else:
                 continue
-            
+
     elif direction == "short":
         notice(f'{direction.upper()} Mode\nStarted at price {e.price()} {coin2}\nBalance is {e.balance()[0]} {coin}')
         while True:
