@@ -26,5 +26,5 @@ jobs:
           PASSWORD: ${{ secrets.DOCKER_API_KEY }}
           DOCKERFILE: "Dockerfile"
           IMAGE_NAME: "${{ secrets.DOCKER_USERNAME }}/${{ env.APP_NAME }}"
-          TAG_NAME: ${{ github.sha }}
+          TAG_NAME: latest
           LATEST: "true"
