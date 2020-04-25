@@ -8,7 +8,7 @@
 
 > Always start by running a trading bot in Paper trading mode and do not engage money before you understand how it works and what profit/loss you should expect.
 
-### Features
+### Features:
 
 > Breakout strategy - after starting the bot will be waiting for huge price movements and when it happened bot immediately bought the coin, and after that starts trailing stop loss for taking a profit. For example - if price down by 20% lasts 5 minutes bot detects it and immediately buys the coin and starts trailing stop loss when trailing step will be achieved bot execute sell order. This works because after any huge price movement immediately starts price correction in the opposite direction.
 
