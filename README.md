@@ -34,6 +34,8 @@ cp config/config.json.sample config/config.json
 
 > Edit config/config.json
 
+> Set paper balance in format [first_coin, second_coin], for example [1, 1000] in config/paper_balance.json
+
 ```bash
 sudo chmod +x docker_ubuntu_install.sh && sudo ./docker_ubuntu_install.sh
 ```
