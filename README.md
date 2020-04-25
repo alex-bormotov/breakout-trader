@@ -29,10 +29,10 @@ cd breakout-trader
 ```
 
 ```bash
-cp config.json.sample config.json
+cp config/config.json.sample config/config.json
 ```
 
-> Edit config
+> Edit config/config.json
 
 ```bash
 sudo chmod +x docker_ubuntu_install.sh && sudo ./docker_ubuntu_install.sh

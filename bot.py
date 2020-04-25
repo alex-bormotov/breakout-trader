@@ -5,15 +5,15 @@ import requests
 
 
 def get_config():
-    with open("config.json", "r") as read_file:
+    with open("config/config.json", "r") as read_file:
         return json.load(read_file)
 
 def get_paper_balance():
-    with open("paper_balance.json", "r") as read_file:
+    with open("config/paper_balance.json", "r") as read_file:
         return json.load(read_file)
 
 def write_paper_balance(new_balance):
-    with open("paper_balance.json", "w") as write_file:
+    with open("config/paper_balance.json", "w") as write_file:
         json.dump(new_balance, write_file, indent=1)
 
 
