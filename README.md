@@ -44,10 +44,3 @@ sudo chmod +x docker_ubuntu_install.sh && sudo ./docker_ubuntu_install.sh
 sudo docker run -d --rm --mount src=`pwd`/config,target=/breakout-trader/config,type=bind skilfulll1/breakout-trader:latest
 ```
 
-##### Say Me Thanks :)
-
-> [My Binance Referal Link](https://www.binance.com/en/register?ref=35560900)
-
-> BTC 1LTwU8hVYxxpHUDf3wYNDjnS9kK4PDdtgT
-
-> ETH 0x23913F4ab3839a8b7bB987F348b8d974C045Dd17
