@@ -34,6 +34,6 @@ python-dotenv==0.12.0
 PyYAML==5.4
 requests==2.23.0
 six==1.14.0
-urllib3==1.25.8
+urllib3==1.26.5
 wrapt==1.11.2
 yarl==1.1.0
