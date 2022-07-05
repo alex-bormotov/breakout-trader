@@ -25,7 +25,7 @@ mccabe==0.6.1
 multidict==4.7.5
 paramiko==2.7.1
 prettytable==0.7.2
-pycares==3.1.1
+pycares==4.2.0
 pycodestyle==2.5.0
 pycparser==2.20
 pylint==2.4.4
